@@ -67,12 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CourseMaterial\HTMLCourse.aspx" />
-    <Content Include="css\bootstrap.min.css" />
     <Content Include="css\changepassword.css" />
     <Content Include="css\courses.css" />
     <Content Include="css\homepage.css" />
     <Content Include="css\index.css" />
     <Content Include="css\colors.css" />
+    <Content Include="css\production-bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="images\animation.png" />
     <Content Include="images\brand1.jpg" />
