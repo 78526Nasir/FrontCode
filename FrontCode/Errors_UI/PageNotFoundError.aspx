@@ -10,11 +10,11 @@
             font-family: 'OpenSans-Light';
             src: url('../fonts/OpenSans-Light.ttf') format('truetype');
         }
-
+    
         h1{
             font-family:'OpenSans-Light', Calibri;
+            font-weight:normal;
         }
-
         .h1{
             margin-top:0px;
             color: #ff6666;
@@ -26,9 +26,7 @@
             font-size: 100px;
             margin-bottom: 0px;
             margin-top: 180px;
-            font-family:Calibri;
         }
-
     </style>
 </head>
 <body>
