@@ -143,7 +143,7 @@
 
             <div class="agreement">
                 <input type="checkbox" name="cbAgreement" runat="server" id="cbAgreement" onchange="isChecked()"/>
-                <label for="cbAgreement">I accept all the <a href="#" target="_blank">terms and conditions</a></label>
+                <label for="cbAgreement">I accept all the terms and conditions</label>
             </div>
 
             <!-- Registration Button Control-->
