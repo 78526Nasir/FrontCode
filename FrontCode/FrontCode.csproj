@@ -132,7 +132,6 @@
     <Content Include="script\editButtonAdmin.js" />
     <Content Include="script\IsEmailExists.js" />
     <Content Include="script\IsUsernameExists.js" />
-    <Content Include="script\jQuery-3.2.1.js" />
     <Content Include="script\loginValidation.js" />
     <Content Include="script\validation.js" />
     <Content Include="UI\ForgetPasswordRedirect.aspx" />
