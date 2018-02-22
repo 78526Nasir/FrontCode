@@ -6,7 +6,7 @@
 <head runat="server">
     <title>Index Master Page</title>
     <link href="../favicon.ico" rel="shortcut icon" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/production-bootstrap.css" rel="stylesheet" />
     <link href="../css/index.css" rel="stylesheet" />
     <link href="../css/courses.css" rel="stylesheet" />
     <link href="../css/homepage.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
                 </a>
 
                 <ul class="m-menu">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="HomePage.aspx">Home</a></li>
                     <li><a href="Courses.aspx">Courses</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="UserLogin.aspx">Login</a></li>
@@ -85,35 +85,6 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 
 </body>
 </html>
