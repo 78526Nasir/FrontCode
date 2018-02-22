@@ -1,0 +1,391 @@
+﻿@font-face {
+    font-family: 'BerkshireSwash-Regular';
+    src: url('../fonts/BerkshireSwash-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'LobsterTwo-Regular';
+    src: url('../fonts/LobsterTwo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url('../fonts/Ubuntu-Light.ttf') format('truetype');
+}
+
+.background{
+    width:100%;
+    position:relative;
+}
+
+.background img{
+    width:100%;
+}
+
+
+.brand-text{
+    position:absolute;
+    width: 45%;
+    text-align:center;
+    top: 20%;
+    font-size: 70px;
+    color: #232323;
+    font-family: 'OpenSans-Light',calibri;
+}
+
+.learn{
+    color: #f25246;
+    display: block;
+    font-family:  cursive;
+    text-shadow: 5px 4px 1px rgba(0,0,0,0.5);
+}
+
+.practice{
+    color: #f9f9d9;
+    display: block;
+    font-family: 'Ubuntu-Medium', calibri;
+    text-shadow: 6px 6px 1px rgba(0,0,0,0.5);
+}
+
+.program{
+    font-family:'BerkshireSwash-Regular', Calibri;
+    display:block;
+    color: #c3c3c3;
+    text-shadow: 6px 6px 1px rgba(0,0,0,0.5);
+}
+
+.learn-html {
+    width:100%;
+    position:relative;
+}
+
+.learn-html img {
+    width:100%;
+}
+
+.html-code-snip{
+    position:absolute;
+    width:50%;
+    margin-left:50%;
+    top:0;
+    height:100%;
+    padding: 5% 5% 6% 1%;
+    text-align: center;
+    color:white;
+}
+
+.html-tags{
+    width:100%;
+    height:80%;
+    background:white;
+    border-left:6px solid gray;
+    font-family:Consolas, monospace;
+    text-align: left;
+}
+
+.code{
+    padding: 20px;
+    color:black;
+}
+
+.h-btn-start{
+    height:50px;
+    font-size:22px;
+    width:250px;
+    border-radius:2px;
+    outline:none;
+    background: #499593;
+    border:none;
+    color: #fff;
+    font-family:'Ubuntu-Light' ,calibri;
+    transition:all 0.33s ease-in-out;
+    box-shadow: 10px 12px 10px rgba(0,0,0,0.1);
+}
+
+.h-btn-start:hover{
+    box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.learn-html{
+    position:relative;
+    width:100%;
+}
+
+.html-text{
+    position:absolute;
+    width:45%;
+    color:white;
+    bottom:7%;
+    text-align:center;
+    text-shadow:7px 7px 5px rgba(0,0,0,0.1);
+}
+
+.html-text p:first-child{
+    font-size:70px;
+    color:#f46f4a;
+    font-family:'Ubuntu-Medium', calibri;
+    
+}
+
+.html-text p:last-child{
+    font-size: 30px;
+}
+
+.btn-learn-html{
+    margin-top: 20px;
+    height: 45px;
+    width: 210px;
+    font-size: 20px;
+    background: #f46f4a;
+    border: none;
+    border-radius: 2px;
+    outline:none;
+    transition:all 0.33s ease-in-out;
+    box-shadow: 10px 12px 10px rgba(0,0,0,0.1);
+    font-family:  'Ubuntu-Light', calibri;
+}
+
+.btn-learn-html:hover{
+    box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.html-output{
+    width:100%;
+    height: 50px;
+    background: rgba(244, 111, 74, 0.3);
+    margin-top: 15px;
+    border-left: 6px solid #f46f4a;
+    text-align: left;
+}
+
+.h1-output{
+    padding-left:20px;
+    font-size:32px;
+    font-family:  initial;
+    line-height: 50px;
+}
+
+@media screen and (max-width:1270px){
+    .code{
+        font-size:13px;
+    }
+
+}
+
+@media screen and (max-width:1180px){
+    .brand-text{
+        top:16%;  
+    }
+
+    .brand-text{
+        font-size:65px;
+    }
+    .html-text p:first-child{
+        font-size:60px;
+    }
+    .html-text p:last-child{
+        font-size: 28px;
+    }
+
+    .html-output{
+        height:40px;
+    }
+    .h1-output{
+        line-height:40px;
+        font-size:22px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    .code{
+        padding:10px;
+        font-size:12px;
+    }
+    .html-output{
+        height:30px;
+    }
+    .h1-output{
+        line-height:30px;
+        font-size:14px;
+    }
+    .btn-learn-html{
+        height:40px;
+        width:170px;
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .code{
+        font-size:11px;
+    }
+    .html-output{
+        display:none;
+    }
+}
+@media screen and (max-width:980px){
+    .brand-text{
+        top:15%;
+    }
+    .brand-text{
+        font-size:55px;
+    }
+    .html-text p:first-child{
+        font-size:50px;
+    }
+    .html-text p:last-child{
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width:940px){
+    .html-tags{
+        height:90%;
+    }
+    .btn-learn-html{
+        margin-top:15px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .brand-text{
+        top:13%;
+    }
+    .brand-text{
+        font-size:45px;
+    }
+    .html-text p:first-child{
+        font-size:40px;
+    }
+    .html-text p:last-child{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width:840px){
+    .html-tags{
+        display:none;
+    }
+    .btn-learn-html, .h-btn-start{
+        margin-top:30%;
+        height:45px;
+        width:200px;
+        font-size:18px;
+    }
+
+    .h-btn-start{
+        margin-top:0px;
+    }
+
+}
+
+@media screen and (max-width:680px){
+    .brand-text{
+        font-size:40px;
+    }
+    .h-btn-start, .btn-learn-html{
+        font-size:18px;
+        width:180px;
+        height:40px;
+    }
+    .html-text p:first-child{
+        font-size:30px;
+    }
+    .html-text p:last-child{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:580px){
+    .brand-text{
+        font-size:30px;
+    }
+    .program, .practice, .learn{
+        text-shadow:none;
+    }
+    .h-btn-start, .btn-learn-html{
+        font-size:16px;
+        width:150px;
+        height:35px;
+        margin-top:10px;
+    }
+    .btn-learn-html{
+        margin-top:30%;
+    }
+    .html-text p:first-child{
+        font-size:26px;
+    }
+    .html-text p:last-child{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .brand-text{
+        top:18%;
+    }
+    .brand-text{
+        font-size:20px;
+    }
+    .h-btn-start, .btn-learn-html{
+        font-size:14px;
+        width:120px;
+        height:30px;
+        margin-top:20px;
+    }
+    .btn-learn-html{
+        margin-top:30%;
+    }
+    .html-text p:first-child{
+        font-size:19px;
+    }
+    .html-text p:last-child{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:380px){
+
+    .h-btn-start, .btn-learn-html{
+        font-size:12px;
+        width:100px;
+        height:25px;
+        margin-top:0px;
+    }
+    
+    .btn-learn-html{
+        margin-top:30%;
+    }
+     .html-text p:first-child{
+        font-size:15px;
+    }
+
+    .html-text p:last-child{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .brand-text{
+        font-size:13px;
+    }
+    .h-btn-start{
+        margin-top:15px;
+    }
+    .html-text p:first-child{
+        font-size:10px;
+    }
+    .html-text{
+        bottom:5%;
+    }
+    .html-text p:last-child{
+        font-size: 8px;
+    }
+}
