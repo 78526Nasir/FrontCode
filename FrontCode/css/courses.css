@@ -49,6 +49,7 @@ ul li a{
 
 .main-content{
     background: #404040;
+    padding-bottom: 30px;
 }
 
 .flex-box{
@@ -168,7 +169,6 @@ ul li a{
 
 .hp-footer{
     display:flex;
-    border-top: 50px solid #404040;
     background:#353535;
     width:100%;
     padding: 20px;
@@ -246,5 +246,3 @@ ul li a{
         width:300px;
     }
 }
-
-

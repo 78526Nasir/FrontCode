@@ -39,7 +39,7 @@
 }
 
 .learn{
-    color: #f25246;
+    color: #9cabb2;
     display: block;
     font-family:  cursive;
     text-shadow: 5px 4px 1px rgba(0,0,0,0.5);
@@ -82,7 +82,7 @@
 .html-tags{
     width:100%;
     height:80%;
-    background:white;
+    background: #f1f1f1;
     border-left:6px solid gray;
     font-family:Consolas, monospace;
     text-align: left;
@@ -114,6 +114,7 @@
 .learn-html{
     position:relative;
     width:100%;
+    border-bottom: 20px solid #383e3e;
 }
 
 .html-text{
@@ -138,7 +139,7 @@
 
 .btn-learn-html{
     margin-top: 20px;
-    height: 45px;
+    height: 50px;
     width: 210px;
     font-size: 20px;
     background: #f46f4a;
@@ -150,7 +151,7 @@
     font-family:  'Ubuntu-Light', calibri;
 }
 
-.btn-learn-html:hover{
+.btn-learn-html:hover, .btn-learn-css:hover, .btn-learn-js:hover{
     box-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
 
@@ -166,8 +167,133 @@
 .h1-output{
     padding-left:20px;
     font-size:32px;
-    font-family:  initial;
+    font-family: 'Ubuntu-Light';
     line-height: 50px;
+}
+
+.learn-css{
+    width:100%;
+    position:relative;
+    border-bottom: 30px solid #6a6b70;
+}
+.learn-css img{
+    width:100%;
+}
+
+.css-code{
+    position:absolute;
+    width:50%;
+    height:100%;
+    top:0;
+    padding:6% 5%;
+    text-align:  center;
+}
+
+.code-snip{
+    height: 200px;
+    width:100%;
+    background:#f1f1f1;
+    border-left:6px solid gray;
+    padding:20px;
+    font-family:Consolas,monospace;
+    text-align: left;
+}
+
+.css-output{
+    height:50px;
+    width:100%;
+    background: rgba(53, 52, 57, 0.5);
+    margin-top:20px;
+    border-left: 6px solid #353439;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+
+.css-output h1{
+    font-family:Garamond, Calibri;
+    color: white;
+    line-height: 50px;
+}
+
+
+.btn-learn-css, .btn-learn-js{
+    height:50px;
+    width:220px;
+    border:none;
+    border-radius:2px;
+    margin-top: 30px;
+    background: #f1f1f1;
+    color: #000;
+    outline:none;
+    font-size:20px;
+    transition:all 0.33s ease-in-out;
+    box-shadow: 10px 12px 10px rgba(0,0,0,0.1);
+    font-family:  'Ubuntu-Light', calibri;
+}
+
+
+.description{
+    position:absolute;
+    width:50%;
+    margin-left:  50%;
+    bottom: 10px;
+    padding-right:30px;
+    text-align: center;
+    color:white;
+    text-shadow:6px 5px 5px rgba(0,0,0,0.2);
+}
+
+.description h1{
+    font-size:60px;
+    font-family:'OpenSans-SemiBold', calibri;
+    color: #272727;
+}
+
+.description span{
+    font-size:35px;
+}
+
+.learn-js{
+    width:100%;
+    position:relative;
+}
+
+.learn-js img{
+    width:100%;
+}
+
+.about-js{
+    position:absolute;
+    width: 50%;
+    top: 20%;
+    margin-left:  50%;
+    text-align:  center;
+    color: white;
+    font-family:'Ubuntu-Light', calibri;
+}
+
+.js-desc{
+    font-size: 35px;
+    color: #ffd;
+}
+
+.js-desc span:first-child{
+    display:block;
+    font-size:60px;
+    margin-bottom:20px;
+    color: #ffff88;
+    font-family:'OpenSans-Light';
+}
+
+.js-desc span:last-child{
+    display:block;
+}
+
+.btn-learn-js{
+    background: #ffff88;
+    color: black;
+    margin-top: 40px;
 }
 
 @media screen and (max-width:1270px){
@@ -199,6 +325,9 @@
         line-height:40px;
         font-size:22px;
     }
+    .description{
+        bottom:0;
+    }
 }
 
 @media screen and (max-width:1150px){
@@ -218,6 +347,15 @@
         width:170px;
         font-size:16px;
     }
+    .btn-learn-css{
+        margin-top:15px;
+    }
+    .about-js{
+        top:10%;
+    }
+    .js-desc{
+        font-size:30px;
+    }
 }
 
 @media screen and (max-width:1050px){
@@ -227,7 +365,29 @@
     .html-output{
         display:none;
     }
+    .code-snip{
+        height: 140px;
+    }
+    .description h1{
+        font-size:45px;
+    }
+    .description span{
+        font-size:25px;
+    }
+    .css-output{
+        height:50px;
+    }
+    .css-output h1{
+        line-height:50px;
+        font-size:22px;
+    }
+    .btn-learn-css{
+        height:40px;
+        width:190px;
+    }
+    
 }
+
 @media screen and (max-width:980px){
     .brand-text{
         top:15%;
@@ -251,6 +411,15 @@
     .btn-learn-html{
         margin-top:15px;
     }
+    .btn-learn-js{
+        height:40px;
+        width:190px;
+        font-size:18px;
+        margin-top:20px;
+    }
+    .js-desc span:first-child{
+        font-size:50px;
+    }
 }
 
 @media screen and (max-width:850px){
@@ -265,6 +434,9 @@
     }
     .html-text p:last-child{
         font-size: 20px;
+    }
+    .css-output{
+        display:none;
     }
     
 }
@@ -283,14 +455,35 @@
     .h-btn-start{
         margin-top:0px;
     }
+    
+    .description h1{
+        font-size:35px;
+    }
+    .description span{
+        font-size:20px;
+    }
+    .js-desc{
+        font-size:25px;
+    }
+    .js-desc span:first-child{
+        font-size:40px;
+    }
+}
 
+@media screen and (max-width:710px){
+    .js-desc span:first-child{
+        font-size:35px;
+    }
+    .js-desc{
+        font-size:20px;
+    }
 }
 
 @media screen and (max-width:680px){
     .brand-text{
         font-size:40px;
     }
-    .h-btn-start, .btn-learn-html{
+    .h-btn-start, .btn-learn-html, .btn-learn-css, .btn-learn-js{
         font-size:18px;
         width:180px;
         height:40px;
@@ -301,6 +494,28 @@
     .html-text p:last-child{
         font-size: 18px;
     }
+    .description h1{
+        margin-left:10px;
+        font-size:25px;
+    }
+    .description span{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:610px){
+    .code-snip{
+        display:none;
+    }
+    .btn-learn-css{
+        margin-top:30%;
+    }
+    .btn-learn-js{
+        margin-top:10px;
+    }
+    .js-desc{
+        font-size:18px;
+    }
 }
 
 @media screen and (max-width:580px){
@@ -310,13 +525,13 @@
     .program, .practice, .learn{
         text-shadow:none;
     }
-    .h-btn-start, .btn-learn-html{
+    .h-btn-start, .btn-learn-html, .btn-learn-css, .btn-learn-js{
         font-size:16px;
         width:150px;
         height:35px;
         margin-top:10px;
     }
-    .btn-learn-html{
+    .btn-learn-html, .btn-learn-css{
         margin-top:30%;
     }
     .html-text p:first-child{
@@ -324,6 +539,22 @@
     }
     .html-text p:last-child{
         font-size: 14px;
+    }
+    .js-desc span:first-child{
+        font-size:25px;
+    }
+    .js-desc{
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:530px){
+    .description h1{
+        margin-left:20px;
+        font-size:20px;
+    }
+    .description span{
+        font-size:16px;
     }
 }
 
@@ -334,13 +565,13 @@
     .brand-text{
         font-size:20px;
     }
-    .h-btn-start, .btn-learn-html{
+    .h-btn-start, .btn-learn-html, .btn-learn-css, .btn-learn-js{
         font-size:14px;
         width:120px;
         height:30px;
         margin-top:20px;
     }
-    .btn-learn-html{
+    .btn-learn-html, .btn-learn-css{
         margin-top:30%;
     }
     .html-text p:first-child{
@@ -349,18 +580,45 @@
     .html-text p:last-child{
         font-size: 12px;
     }
+    .btn-learn-js{
+        margin-top:10px;
+    }
+    .js-desc span:first-child{
+        font-size:22px;
+        margin-bottom:10px;
+    }
+    .js-desc{
+        font-size:14px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .description{
+        bottom:-10px;
+    }
+    .description h1{
+        font-size:20px;
+    }
+    .description span{
+        font-size:14px;
+    }
+    .js-desc{
+        font-size:12px;
+    }
 }
 
 @media screen and (max-width:380px){
 
-    .h-btn-start, .btn-learn-html{
+    .h-btn-start, .btn-learn-html,.btn-learn-css, .btn-learn-js{
         font-size:12px;
         width:100px;
         height:25px;
         margin-top:0px;
     }
-    
-    .btn-learn-html{
+    .btn-learn-js{
+        margin-top:5px;
+    }
+    .btn-learn-html, .btn-learn-css{
         margin-top:30%;
     }
      .html-text p:first-child{
@@ -369,6 +627,32 @@
 
     .html-text p:last-child{
         font-size: 11px;
+    }
+    .description h1{
+        font-size:16px;
+    }
+    .description span{
+        font-size:12px;
+    }
+    .js-desc span:first-child{
+        font-size:18px;
+        margin-bottom:0px;
+    }
+
+}
+
+@media screen and (max-width:330px){
+    .description h1{
+        font-size:14px;
+    }
+    .description span{
+        font-size:10px;
+    }
+    .js-desc span:last-child{
+        display:none;
+    }
+    .js-desc span:first-child{
+        margin-bottom:5px;
     }
 }
 

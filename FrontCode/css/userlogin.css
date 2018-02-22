@@ -110,7 +110,11 @@ p a:hover{
 .btn-login:hover{
     cursor:pointer;
     border:1px solid #ccc;
-    box-shadow:0 0 0 3px rgba(234, 234, 234, 0.5);
+}
+
+.btn-login:focus{
+    border:1px solid #ccc;
+    box-shadow:0 0 0 3px rgba(234, 234, 234, 0.5); 
 }
 
 .status-report{
