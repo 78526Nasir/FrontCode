@@ -24,7 +24,7 @@ ul li a{
 }
 
 .courses-menu a:hover{
-    background:#353535;
+    background: #494949;
     color:white;
 }
 
@@ -49,7 +49,7 @@ ul li a{
 
 .main-content{
     background: #404040;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .flex-box{

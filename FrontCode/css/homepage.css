@@ -99,16 +99,12 @@
     width:250px;
     border-radius:2px;
     outline:none;
-    background: #499593;
+    background: #7d7b7c;
     border:none;
     color: #fff;
     font-family:'Ubuntu-Light' ,calibri;
     transition:all 0.33s ease-in-out;
     box-shadow: 10px 12px 10px rgba(0,0,0,0.1);
-}
-
-.h-btn-start:hover{
-    box-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
 
 .learn-html{
@@ -151,7 +147,7 @@
     font-family:  'Ubuntu-Light', calibri;
 }
 
-.btn-learn-html:hover, .btn-learn-css:hover, .btn-learn-js:hover{
+.btn-learn-html:hover, .btn-learn-css:hover, .btn-learn-js:hover, .h-btn-start:hover{
     box-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
 

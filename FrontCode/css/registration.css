@@ -89,7 +89,7 @@ table{
 
 .button{
     text-align:center;
-    margin: 18px auto;
+    margin: 18px auto 8px auto;
 }
 
 .button input{
@@ -168,7 +168,7 @@ table{
 }
 
 .status{
-    color:red;
+    color: #ff6666;
     font:bold 12px consolas;
 }
 
