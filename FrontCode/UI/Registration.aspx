@@ -36,7 +36,7 @@
                         </td>
                         <td class="required">
                             <asp:RequiredFieldValidator ID="rfv1" runat="server" ErrorMessage="Username required" ControlToValidate="txtUsername">&nbsp;</asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="rev3" runat="server" ControlToValidate="txtUsername" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z\d_-]{3,}"
+                            <asp:RegularExpressionValidator ID="rev3" runat="server" ControlToValidate="txtUsername" ValidationExpression="^(?=.*[a-z])[a-zA-Z\d_-]{3,49}"
                                 ErrorMessage="Username must contain: <br/>Atleast 3 and less then 50 alphabet<br/>No blank space.  <br/> No special character">
                                 &nbsp;</asp:RegularExpressionValidator>
                         </td>
@@ -63,7 +63,7 @@
                         </td>
                         <td class="required">
                             <asp:RequiredFieldValidator ID="rbv2" runat="server" ErrorMessage="Full Name Required" ControlToValidate="txtFullName">&nbsp;</asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="regEV1" runat="server" ControlToValidate="txtFullName"  ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])[a-z A-Z_-]{3,50}"
+                            <asp:RegularExpressionValidator ID="regEV1" runat="server" ControlToValidate="txtFullName"  ValidationExpression="^(?=.*[a-z])[a-z A-Z_-]{3,99}"
                                 ErrorMessage="Full must contain: <br/> Atleast 3 and less then 100 alphabet<br/> No special character <br/> No Number">&nbsp;
                             </asp:RegularExpressionValidator>
                         </td>
@@ -149,7 +149,7 @@
             <!-- Registration Button Control-->
 
             <div class="button">
-                <asp:Button ID="btnRegister" runat="server" Text="Register"/>
+                <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click"/>
             </div>
 
             <asp:Label ID="lblStatus" CssClass="status" runat="server"></asp:Label>

@@ -12,6 +12,7 @@ namespace FrontCode.UI
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            Session["AbsolutePage"] = HttpContext.Current.Request.Url.AbsolutePath;
         }
     }
 }

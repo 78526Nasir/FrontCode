@@ -12,11 +12,22 @@ namespace FrontCode.UI
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            Session["AbsolutePage"] = HttpContext.Current.Request.Url.AbsolutePath;
         }
 
         protected void btnLearnHtml_Click(object sender, EventArgs e)
         {
-            //Response.Redirect("~/UI");
+            Response.Redirect("~/SyllabusUI/HTMLCourse.aspx");
+        }
+
+        protected void btnStartLearning_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/UI/Courses.aspx");
+        }
+
+        protected void btnLearnCss_Click(object sender, EventArgs e)
+        {
+            //TODO
         }
     }
 }

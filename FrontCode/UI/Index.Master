@@ -6,11 +6,19 @@
 <head runat="server">
     <title>Index Master Page</title>
     <link href="../favicon.ico" rel="shortcut icon" />
-    <link href="../css/production-bootstrap.css" rel="stylesheet" />
+
+    <!-- Desktop CDN -->
+    <link href="../Untracked/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Untracked/fontawesome-all.min.css" rel="stylesheet" />
+    <script src="../Untracked/fontawesome-all.min.js"></script>
+
+    <!-- Raw CSS -->
     <link href="../css/index.css" rel="stylesheet" />
     <link href="../css/courses.css" rel="stylesheet" />
     <link href="../css/homepage.css" rel="stylesheet" />
     <link href="../css/colors.css" rel="stylesheet" />
+    <link href="../css/syllabus.css" rel="stylesheet" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -22,10 +30,10 @@
                 </a>
 
                 <ul class="m-menu">
-                    <li><a href="HomePage.aspx">Home</a></li>
-                    <li><a href="Courses.aspx">Courses</a></li>
+                    <li><a href="../UI/HomePage.aspx">Home</a></li>
+                    <li><a href="../UI/Courses.aspx">Courses</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="UserLogin.aspx">Login</a></li>
+                    <li><a href="../UI/UserLogin.aspx">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -33,7 +41,7 @@
         <div class="courses-menu">
             <div class="container">
                 <ul>
-                    <li><a href="#"><i class="fab fa-html5"></i>&nbsp;HTML</a></li>
+                    <li><a href="../SyllabusUI/HTMLCourse.aspx"><i class="fab fa-html5"></i>&nbsp;HTML</a></li>
 
                     <li class="dropdown-li">
                         <a href="#"><i class="fab fa-css3-alt"></i>&nbsp;CSS&nbsp;<span class="caret"></span></a>
@@ -83,8 +91,29 @@
         </div>
     </form>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accor");
+        var i;
 
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("act");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <script src="../Untracked/bootstrap.min.js"></script>
+    <script src="../Untracked/jQuery3.3.1.min.js"></script>
+
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>--%>
 </body>
 </html>

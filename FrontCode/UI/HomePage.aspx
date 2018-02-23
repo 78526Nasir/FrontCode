@@ -2,10 +2,10 @@
 
 <asp:Content ID="homePageBodyContent" ContentPlaceHolderID="body" runat="server">
     <div class="background">
-        <img src="../images/brand1.jpg" alt="Background" />
+        <img src="../images/optimize_copy_r.jpg" alt="Background" />
         <div class="brand-text">
             <span class="learn">learn</span><span class="practice">practice</span><span class="program"> <span style="color: #4ca">&</span> program</span>
-            <asp:Button Text="Start Learning" ID="btnStartLearning" runat="server" CssClass="h-btn-start" />
+            <asp:Button Text="Start Learning" ID="btnStartLearning" runat="server" CssClass="h-btn-start" OnClick="btnStartLearning_Click" />
         </div>
     </div>
 
@@ -52,7 +52,7 @@
             <div class="html-output">
                 <span class="h1-output">Hello World!</span>
             </div>
-            <asp:Button ID="btnLearnHtml" Text="Learn HTML" CssClass="btn-learn-html" runat="server" />
+            <asp:Button ID="btnLearnHtml" Text="Learn HTML" CssClass="btn-learn-html" runat="server" OnClick="btnLearnHtml_Click" />
         </div>
     </div>
 
@@ -73,7 +73,7 @@
             <div class="css-output">
                 <h1>Hello World!</h1>
             </div>
-            <asp:Button Text="Learn CSS" runat="server" ID="btnLearnCss" CssClass="btn-learn-css" />
+            <asp:Button Text="Learn CSS" runat="server" ID="btnLearnCss" CssClass="btn-learn-css" OnClick="btnLearnCss_Click" />
         </div>
 
         <div class="description">

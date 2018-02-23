@@ -36,7 +36,7 @@
             <p>Forget <a href="ForgetPasswordRedirect.aspx" target="_blank">password?</a></p>
             <br />
 
-            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn-login" />
+            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn-login" OnClick="btnLogin_Click" />
             <br />
             <asp:Label ID="status" runat="server" CssClass="status-report"></asp:Label>
             <br />

@@ -21,8 +21,8 @@
                     </div>
 
                     <div class="process">
-                        <a href="#" class="buttons">COURSE SYLLABUS</a>
-                        <a href="#" class="buttons">ENROLL</a>
+                        <a href="../SyllabusUI/HTMLCourse.aspx" class="buttons">COURSE SYLLABUS</a>
+                        <a href="../CourseMaterial/HTML.aspx" class="buttons">ENROLL</a>
                     </div>
 
                     <div class="is-enroll">
