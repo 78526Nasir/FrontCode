@@ -24,7 +24,7 @@ namespace FrontCode.WebServices
         {
             User user = new User
             {
-                Username = username
+                UserName = username
             };
 
             user.UserNameInUse = false;
