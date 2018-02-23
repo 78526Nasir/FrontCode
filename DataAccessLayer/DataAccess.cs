@@ -11,6 +11,10 @@ namespace DataAccessLayer
 {
     public class DataAccess
     {
+        /// <summary>
+        /// Established Connecttion between ASP.NET and SQL Server
+        /// </summary>
+        /// <returns>SqlConnection object</returns>
         public static SqlConnection connectDB()
         {
             try
