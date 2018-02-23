@@ -11,7 +11,7 @@ namespace FrontCode.CourseMaterial
 {
 
 
-    public partial class HTMLCourse
+    public partial class HTML
     {
     }
 }
