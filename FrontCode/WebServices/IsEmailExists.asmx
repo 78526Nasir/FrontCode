@@ -1,1 +1,1 @@
-﻿<%@ WebService Language="C#" CodeBehind="IsEmailExists.asmx.cs" Class="E_Commerce_Site.WebServices.IsEmailExists" %>
+﻿<%@ WebService Language="C#" CodeBehind="IsEmailExists.asmx.cs" Class="FrontCode.WebServices.IsEmailExists" %>
