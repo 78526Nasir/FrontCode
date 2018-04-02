@@ -17,7 +17,7 @@
             <p>Hyper Text Markup Language</p>
         </div>
         <div class="html-code-snip">
-            <div class="html-tags">
+            <div class="html-tags">h
                 <div class="code">
                     &lt;!DOCTYPE html&gt;
                     <br />
