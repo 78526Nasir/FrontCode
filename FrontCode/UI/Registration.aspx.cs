@@ -42,18 +42,16 @@ namespace FrontCode.UI
                 {
                     user.Registration();
                     ResetForm();
-
+                    Session["RedirectPageMessage"] = "Account Successfully Created. Redirect To <a href = 'UserLogin.aspx'>Login</a> Page.";
                     Response.Redirect("~/UI/Redirect.aspx");
                 }
                 else
                 {
-                    ResetForm();
                     lblStatus.Text = "Username or Email already exists!";
                 }
             }
             else
             {
-                ResetForm();
                 ValidationSummary1.HeaderText = "Please fill up all the necessary fields";
             }
         }

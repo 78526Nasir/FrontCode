@@ -36,7 +36,7 @@
                         </td>
                         <td class="required">
                             <asp:RequiredFieldValidator ID="rfv1" runat="server" ErrorMessage="Username required" ControlToValidate="txtUsername">&nbsp;</asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="rev3" runat="server" ControlToValidate="txtUsername" ValidationExpression="^(?=.*[a-z])[a-zA-Z\d_-]{3,49}"
+                            <asp:RegularExpressionValidator ID="rev3" runat="server" ControlToValidate="txtUsername" ValidationExpression="^[a-zA-Z\d_-]{3,49}"
                                 ErrorMessage="Username must contain: <br/>Atleast 3 and less then 50 alphabet<br/>No blank space.  <br/> No special character">
                                 &nbsp;</asp:RegularExpressionValidator>
                         </td>
@@ -63,7 +63,7 @@
                         </td>
                         <td class="required">
                             <asp:RequiredFieldValidator ID="rbv2" runat="server" ErrorMessage="Full Name Required" ControlToValidate="txtFullName">&nbsp;</asp:RequiredFieldValidator>
-                            <asp:RegularExpressionValidator ID="regEV1" runat="server" ControlToValidate="txtFullName"  ValidationExpression="^(?=.*[a-z])[a-z A-Z_-]{3,99}"
+                            <asp:RegularExpressionValidator ID="regEV1" runat="server" ControlToValidate="txtFullName"  ValidationExpression="^[a-z A-Z_-]{3,99}"
                                 ErrorMessage="Full must contain: <br/> Atleast 3 and less then 100 alphabet<br/> No special character <br/> No Number">&nbsp;
                             </asp:RegularExpressionValidator>
                         </td>
@@ -143,7 +143,7 @@
 
             <div class="agreement">
                 <input type="checkbox" name="cbAgreement" runat="server" id="cbAgreement" onchange="isChecked()"/>
-                <label for="cbAgreement">I accept all the terms and conditions</label>
+                <label for="cbAgreement">I accept all the <a href="TermsAndConditions.aspx" target="_blank">terms and conditions</a></label>
             </div>
 
             <!-- Registration Button Control-->
@@ -164,7 +164,8 @@
     </form>
 
 
-    <script src="../script/jQuery-3.2.1.js"></script>
+    <%--<script src="../Untracked/jQuery3.3.1.min.js"></script>--%>
+    <script src="../Untracked/jQuery-3.2.1.js"></script>
     <script type="text/javascript" src="../script/validation.js"></script>
     <script type="text/javascript" src="../script/IsUsernameExists.js"></script>
     <script type="text/javascript" src="../script/IsEmailExists.js"></script>
