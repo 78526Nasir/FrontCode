@@ -38,10 +38,10 @@ namespace DataAccessLayer
 
             } while (exception != null);
 
-            if (EventLog.SourceExists("DotNET"))
+            if (EventLog.SourceExists("ASP.NET"))
             {
-                EventLog eventLog = new EventLog("EBuy");
-                eventLog.Source = "DotNET";
+                EventLog eventLog = new EventLog("FrontCode");
+                eventLog.Source = "ASP.NET";
                 eventLog.WriteEntry(sbExceptionMessage.ToString(), EventLogEntryType.Error);
             }
         }
