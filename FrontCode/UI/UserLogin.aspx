@@ -7,7 +7,7 @@
     <title>Login</title>
     <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link href="../Untracked/fontawesome-all.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="~/css/userlogin.css" />
 
 </head>
@@ -53,5 +53,7 @@
 
     <!-- scripts-->
     <%--<script src="../script/loginValidation.js" type="text/javascript"></script>--%>
+    <script src="../Untracked/jQuery3.3.1.min.js"></script>
+    <script src="../Untracked/fontawesome-all.min.js"></script>
 </body>
 </html>
