@@ -15,15 +15,16 @@
                     if (data.UserNameInUse) {
                         label.text(username + " is already in use");
                         label.css("color", "red");
+                        label.css("font-family:consolas");
                         $("#txtUsername").css("border", "1px solid red");
-                        $("#txtUsername").css("box-shadow", "0px 0px 5px rgba(255,0,0,0.4)");
+                        $("#txtUsername").css("box-shadow", "0 0 0 3px rgba(255,0,0,0.2)");
                         alertEle.css("visibility", "visible");
                         $("#btnRegister").attr('disabled', 'disabled');
 
                     } else {
                         label.text("");
-                        $("#txtUsername").css("border", "1px solid #77dd66");
-                        $("#txtUsername").css("boxShadow", "none");
+                        $("#txtUsername").css("border", "1px solid #255255");
+                        $("#txtUsername").css("box-shadow", "none");
                         alertEle.css("visibility", "hidden");
                     }
                 },
