@@ -13,7 +13,7 @@ namespace FrontCode.CourseMaterial
         {
             if (!IsPostBack)
             {
-                if (Session["User"] != null)
+                if (Session["UserWholeRecord"] != null)
                 {
 
                 }else
