@@ -15,6 +15,8 @@ namespace BusinessAccessLayer
         public Admin AdminObj { get; set; }
 
 
+
+        /* methods */
         public void AddNewUser()
         {
             SqlParameter[] parameters = new SqlParameter[7];
@@ -60,7 +62,6 @@ namespace BusinessAccessLayer
             return dt == null ? new DataTable() : dt;
         }
 
-        //TODO
         public DataTable ResetPassword()
         {
             SqlParameter[] parameter = new SqlParameter[1];
@@ -103,7 +104,6 @@ namespace BusinessAccessLayer
             return salt;
         }
 
-        //TODO
         public bool IsPasswordResetLinkValid()
         {
             SqlParameter[] parameters = new SqlParameter[1];
@@ -127,7 +127,7 @@ namespace BusinessAccessLayer
                 }
             }
         }
-        // TODO
+    
         public bool IsPasswordChanged()
         {
             SqlParameter[] parameters = new SqlParameter[4];
