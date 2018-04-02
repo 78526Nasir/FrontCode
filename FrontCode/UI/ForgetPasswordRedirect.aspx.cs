@@ -45,12 +45,14 @@ namespace FrontCode.UI
                     try
                     {
                         SendPasswordResetMail(toEmail, username, uniqueID);
-                        lblStatus.Text = "An email with instructions to reset your password is sent to your email address";
-                        lblStatus.ForeColor = System.Drawing.Color.Green;
+                        
+                        Session["RedirectPageMessage"] = "An email with instructions to <span style='color:#ff8888'>RESET</span> your password is sent to your email address.";
                         txtEmail.Text = string.Empty;
+                        Response.Redirect("~/UI/Redirect.aspx");
                     }
                     catch (Exception ex)
                     {
+                        ExceptionLogger.Log(ex);
                         lblStatus.Text = "An unknown error occured!";
                         lblStatus.ForeColor = System.Drawing.Color.Red;
                     }
@@ -79,7 +81,7 @@ namespace FrontCode.UI
             sbEmailBody.Append("Dear " + username + ",<br/><br/>");
             sbEmailBody.Append("Please click on the following link to reset your password");
             sbEmailBody.Append("<br/>");
-            sbEmailBody.Append("http://localhost:18523/UI/ChangePassword.aspx?uid=" + uniqueID);
+            sbEmailBody.Append("http://localhost:24183/UI/ChangePassword.aspx?uid=" + uniqueID);
             sbEmailBody.Append("<br/><br/>");
             sbEmailBody.Append("<b>E-Buy</b>");
 
