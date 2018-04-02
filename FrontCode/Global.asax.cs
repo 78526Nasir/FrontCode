@@ -30,7 +30,6 @@ namespace E_Commerce_Site
         {
 
         }
-        //TODO
         protected void Application_Error(object sender, EventArgs e)
         {
             Exception ex = Server.GetLastError();
@@ -39,7 +38,7 @@ namespace E_Commerce_Site
             var exception = (HttpException)ex;
             int httpCode = exception.GetHttpCode();
 
-            Server.ClearError();           
+            Server.ClearError();
 
             if (!Response.IsRequestBeingRedirected)
             {
