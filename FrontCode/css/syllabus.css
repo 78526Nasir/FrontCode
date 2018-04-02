@@ -26,7 +26,7 @@
     background-color: #eaeaea !important;
 }
 
-.btn-enroll-html, .btn-enroll-css, .btn-enroll-js{
+.btn-enroll-html, .btn-enroll-css, .btn-enroll-js, .btn-enroll-animate-css, .btn-enroll-bootstrap-css{
     height:50px;
     width:200px;
     background: #f16528;
@@ -40,7 +40,7 @@
     font-family: 'Ubuntu-Light', calibri;
 }
 
-.btn-enroll-html:hover, .btn-enroll-css:hover, .btn-enroll-js:hover {
+.btn-enroll-html:hover, .btn-enroll-css:hover, .btn-enroll-js:hover, .btn-enroll-animate-css:hover , .btn-enroll-bootstrap-css:hover{
     box-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
 
@@ -89,4 +89,14 @@
 .btn-enroll-js{
     background:#ffff88;
     color:black;
+}
+
+.btn-enroll-bootstrap-css{
+    background:#7952b3;
+    color:white;
+}
+
+.btn-enroll-animate-css{
+    background:#226688;
+    color:white;
 }
