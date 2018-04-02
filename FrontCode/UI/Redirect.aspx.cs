@@ -11,7 +11,14 @@ namespace FrontCode.UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["RedirectPageMessage"] == null)
+            {
+                Response.Redirect("~/Errors_UI/PageNotFoundError.aspx");
+            }
+            else
+            {
+                lrlMessage.Text = Session["RedirectPageMessage"].ToString();
+            }
         }
     }
 }

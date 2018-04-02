@@ -13,8 +13,8 @@
 
         .message {
             width:100%;
-            margin-top: 150px;
-            color: #40aadd;
+            margin-top: 250px;
+            color: #2692c3;
             font-size: 40px;
             font-family: 'OpenSans-Light', Calibri;
             font-weight:normal !important;
@@ -32,7 +32,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="container message">
-            <span>Account Successfully Created. Redirect To <a href="UserLogin.aspx">Login</a> Page.</span>
+            <asp:Literal ID="lrlMessage" runat="server"></asp:Literal>
         </div>
     </form>
 </body>
