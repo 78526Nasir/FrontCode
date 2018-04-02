@@ -11,7 +11,18 @@ namespace FrontCode.UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                if (Session["UserWholeRecord"] != null)
+                {
+                    var li = (System.Web.UI.HtmlControls.HtmlGenericControl)this.FindControl("menuLID");
+                    li.Style.Add("display", "inline-block !important");
+                    li = (System.Web.UI.HtmlControls.HtmlGenericControl)this.FindControl("menuLIL");
+                    li.Style.Add("display", "none !important");
+                    panelAfter.Style.Add("display", "block !important");
+                }
 
+            }
         }
     }
 }

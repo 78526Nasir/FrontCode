@@ -31,6 +31,33 @@ namespace FrontCode.UI {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
+        /// menuLID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menuLID;
+        
+        /// <summary>
+        /// menuLIL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl menuLIL;
+        
+        /// <summary>
+        /// panelAfter control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelAfter;
+        
+        /// <summary>
         /// body control.
         /// </summary>
         /// <remarks>

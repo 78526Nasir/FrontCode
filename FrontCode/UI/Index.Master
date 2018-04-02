@@ -7,10 +7,14 @@
     <title>Index Master Page</title>
     <link href="../favicon.ico" rel="shortcut icon" />
 
-    <!-- Desktop CDN -->
+    <!-- Desktop CSS CDN -->
     <link href="../Untracked/bootstrap.min.css" rel="stylesheet" />
     <link href="../Untracked/fontawesome-all.min.css" rel="stylesheet" />
+
+    <!-- Desktop JS CDN -->
     <script src="../Untracked/fontawesome-all.min.js"></script>
+    <script src="../Untracked/bootstrap.min.js"></script>
+    <script src="../Untracked/jQuery3.3.1.min.js"></script>
 
     <!-- Raw CSS -->
     <link href="../css/index.css" rel="stylesheet" />
@@ -18,7 +22,8 @@
     <link href="../css/homepage.css" rel="stylesheet" />
     <link href="../css/colors.css" rel="stylesheet" />
     <link href="../css/syllabus.css" rel="stylesheet" />
-
+    <link href="../css/css-course.css" rel="stylesheet" />
+    <link href="../css/about.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -29,12 +34,19 @@
                     <h1 class="m-title"><i class="fas fa-code" style="color: #999"></i>&nbsp;FrontCode</h1>
                 </a>
 
-                <ul class="m-menu">
+                <ul class="m-menu" runat="server">
                     <li><a href="../UI/HomePage.aspx">Home</a></li>
                     <li><a href="../UI/Courses.aspx">Courses</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="../UI/UserLogin.aspx">Login</a></li>
+                    <li><a href="../UI/About.aspx">About</a></li>
+                    <li id="menuLID" runat="server" class="menu-disable"><a href="#">Dashboard</a></li>
+                    <li id="menuLIL" runat="server"><a href="../UI/UserLogin.aspx">Login</a></li>
+                    <li>
+                        <asp:Panel ID="panelAfter" runat="server" class="after-login menu-disable">
+                            <img class="user-avatar" src="../images/avatar.png" alt="User_image" />
+                        </asp:Panel>
+                    </li>
                 </ul>
+
             </div>
         </div>
 
@@ -47,14 +59,14 @@
                         <a href="#"><i class="fab fa-css3-alt"></i>&nbsp;CSS&nbsp;<span class="caret"></span></a>
 
                         <div class="dropdown-css">
-                            <a href="#">CSS Basics</a>
+                            <a href="../SyllabusUI/CSSCourse.aspx">Basic CSS</a>
                             <a href="#">Animate.CSS</a>
                             <a href="#">Responsive Layout</a>
                         </div>
                     </li>
 
                     <li><a href="#"><i class="fab fa-slack-hash"></i>&nbsp;Bootstrap</a></li>
-                    <li><a href="#"><i class="fab fa-js-square"></i>&nbsp;JavaScript</a></li>
+                    <li><a href="../SyllabusUI/JavaScriptCourse.aspx"><i class="fab fa-js-square"></i>&nbsp;JavaScript</a></li>
                 </ul>
             </div>
         </div>
@@ -108,8 +120,6 @@
         }
     </script>
 
-    <script src="../Untracked/bootstrap.min.js"></script>
-    <script src="../Untracked/jQuery3.3.1.min.js"></script>
 
     <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
