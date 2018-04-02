@@ -26,10 +26,10 @@
     background-color: #eaeaea !important;
 }
 
-.btn-enroll-html{
+.btn-enroll-html, .btn-enroll-css, .btn-enroll-js{
     height:50px;
     width:200px;
-    background: #4caf50;
+    background: #f16528;
     border:none;
     border-radius:2px;
     box-shadow: 10px 12px 10px rgba(0,0,0,0.1);
@@ -40,7 +40,7 @@
     font-family: 'Ubuntu-Light', calibri;
 }
 
-.btn-enroll-html:hover{
+.btn-enroll-html:hover, .btn-enroll-css:hover, .btn-enroll-js:hover {
     box-shadow:0px 0px 5px rgba(0,0,0,0.2);
 }
 
@@ -84,4 +84,9 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.33s ease-in-out;
+}
+
+.btn-enroll-js{
+    background:#ffff88;
+    color:black;
 }

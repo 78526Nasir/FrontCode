@@ -75,8 +75,24 @@ a:hover, a:focus, a:visited{
     padding-top: 109px;
 }
 
+.menu-disable{
+    display:none !important;
+}
 
-@media screen and (max-width:605px){
+.user-avatar{
+    height:60px;
+    padding: 7px;
+}
+
+after-login{
+    
+}
+
+.menu-enable{
+    display:block !important;
+}
+
+@media screen and (max-width: 711px){
     .m-title{
         word-break:break-all;
     }
@@ -97,5 +113,13 @@ a:hover, a:focus, a:visited{
     }
     .m-body{
         padding-top:0px;
+    }
+}
+
+@media screen and (max-width:485px){
+    .user-avatar{
+        position:absolute;
+        top:0;
+        right:0;
     }
 }

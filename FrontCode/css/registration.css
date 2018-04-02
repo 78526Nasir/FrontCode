@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6{
 
 .container{
     width: 500px;
-    height: 500px;
+    height: 520px;
     margin:0px auto;
     margin-top: 50px;
     background:white;
@@ -126,7 +126,7 @@ table{
 
 .agreement a{
     text-decoration:none;
-    color:#226688;
+    color: #1166bb;
     font-weight:bold;
 }
 
