@@ -170,5 +170,18 @@ namespace BusinessAccessLayer
 
             return DataAccess.ExecuteDTByProcedure("SP_IS_EMAIL_EXISTS", parameters);
         }
+
+        public void AddNewEnrolledCourse(string guid)
+        {
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = DataAccess.AddParameter("@guid", guid);
+
+            DataAccess.ExecuteDTByProcedure("ADD_ENROLL_COURSE", parameters);
+        }
+
+        public DataTable SelectEnrollCourses()
+        {
+            return DataAccess.ExecuteDTByProcedure("SELECT_ENROLL_COURSES", null);
+        }
     }
 }
