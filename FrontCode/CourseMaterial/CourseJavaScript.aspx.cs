@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessAccessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,7 +16,9 @@ namespace FrontCode.CourseMaterial
             {
                 if (Session["UserWholeRecord"] != null)
                 {
-
+                    string guid = Request.QueryString["CID"].ToString();
+                    FrontCodeBusiness fcb = new FrontCodeBusiness();
+                    fcb.AddNewEnrolledCourse(guid);
                 }
                 else
                 {
