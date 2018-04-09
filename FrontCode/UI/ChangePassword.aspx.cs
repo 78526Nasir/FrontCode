@@ -13,32 +13,32 @@ namespace FrontCode.UI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (!IsPostBack)
-            //{
-            //    User user = new User
-            //    {
-            //        GlobalUniqueIDForResetPassword = Request.QueryString["uid"]
-            //    };
+            if (!IsPostBack)
+            {
+                User user = new User
+                {
+                    GlobalUniqueIDForResetPassword = Request.QueryString["uid"]
+                };
 
-            //    FrontCodeBusiness ecb = new FrontCodeBusiness
-            //    {
-            //        UserObj = user
-            //    };
+                FrontCodeBusiness ecb = new FrontCodeBusiness
+                {
+                    UserObj = user
+                };
 
-            //    if (!ecb.IsPasswordResetLinkValid())
-            //    {
-            //        Response.Clear();
-            //        Response.Write("<h1 style='color:red;'>Password reset link has expired or invalid link!</h1>");
-            //        Response.End();
-            //    }
-            //}
+                if (!ecb.IsPasswordResetLinkValid())
+                {
+                    Response.Clear();
+                    Response.Write("<h1 style='color:red;'>Password reset link has expired or invalid link!</h1>");
+                    Response.End();
+                }
+            }
         }
 
         protected void btnChangePassword_Click(object sender, EventArgs e)
         {
-            if (changeUserPassword())
+            if (ChangeUserPassword())
             {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "Reg_Conf", "alert('Your password successfully changed!')", true);
+                Session["RedirectPageMessage"] = "Your password successfully changed. Redirect to <a href='UserLogin.aspx'>Login</a> Page.";
                 Response.Redirect("~/UI/Redirect.aspx");
             }
             else
@@ -47,7 +47,7 @@ namespace FrontCode.UI
             }
         }
 
-        private bool changeUserPassword()
+        private bool ChangeUserPassword()
         {
             string GUID = Request.QueryString["uid"];
             string salt;
@@ -61,12 +61,12 @@ namespace FrontCode.UI
                 Hash = hash
             };
 
-            FrontCodeBusiness ecb = new FrontCodeBusiness
+            FrontCodeBusiness fcb = new FrontCodeBusiness
             {
                 UserObj = user
             };
 
-            return ecb.IsPasswordChanged();
+            return fcb.IsPasswordChanged();
         }
 
 

@@ -83,7 +83,7 @@ namespace FrontCode.UI
             sbEmailBody.Append("<br/>");
             sbEmailBody.Append("http://localhost:24183/UI/ChangePassword.aspx?uid=" + uniqueID);
             sbEmailBody.Append("<br/><br/>");
-            sbEmailBody.Append("<b>E-Buy</b>");
+            sbEmailBody.Append("<b>FrontCode</b>");
 
             mailMessage.IsBodyHtml = true;
             mailMessage.Body = sbEmailBody.ToString();

@@ -27,7 +27,12 @@ namespace FrontCode.UI
 
         protected void btnLearnCss_Click(object sender, EventArgs e)
         {
-            //TODO
+            Response.Redirect("~/SyllabusUI/CSSCourse.aspx");
+        }
+
+        protected void btnLearnJavaScript_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/SyllabusUI/JavaScriptCourse.aspx");
         }
     }
 }

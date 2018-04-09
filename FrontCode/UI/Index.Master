@@ -10,11 +10,12 @@
     <!-- Desktop CSS CDN -->
     <link href="../Untracked/bootstrap.min.css" rel="stylesheet" />
     <link href="../Untracked/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="../Untracked/github.css" rel="stylesheet" />
 
     <!-- Desktop JS CDN -->
     <script src="../Untracked/fontawesome-all.min.js"></script>
+    <script src="../Untracked/jQuery-3.2.1.js"></script>
     <script src="../Untracked/bootstrap.min.js"></script>
-    <script src="../Untracked/jQuery3.3.1.min.js"></script>
 
     <!-- Raw CSS -->
     <link href="../css/index.css" rel="stylesheet" />
@@ -24,6 +25,10 @@
     <link href="../css/syllabus.css" rel="stylesheet" />
     <link href="../css/css-course.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
+    <link href="../css/dashboard.css" rel="stylesheet" />
+    <link href="../css/courseHtml.css" rel="stylesheet" />
+    
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -35,41 +40,60 @@
                 </a>
 
                 <ul class="m-menu" runat="server">
-                    <li><a href="../UI/HomePage.aspx">Home</a></li>
-                    <li><a href="../UI/Courses.aspx">Courses</a></li>
-                    <li><a href="../UI/About.aspx">About</a></li>
-                    <li id="menuLID" runat="server" class="menu-disable"><a href="#">Dashboard</a></li>
+                    <li><a id="lnkHome" runat="server" href="../UI/HomePage.aspx">Home</a></li>
+                    <li><a id="lnkCourse" runat="server" href="../UI/Courses.aspx">Courses</a></li>
+                    <li><a id="lnkAbout" runat="server" href="../UI/About.aspx">About</a></li>
+                    <li id="menuLID" runat="server" class="menu-disable"><a href="../UI/DashBoard.aspx">Dashboard</a></li>
                     <li id="menuLIL" runat="server"><a href="../UI/UserLogin.aspx">Login</a></li>
                     <li>
                         <asp:Panel ID="panelAfter" runat="server" class="after-login menu-disable">
-                            <img class="user-avatar" src="../images/avatar.png" alt="User_image" />
+                            <img class="user-avatar" runat="server" id="imgUser" src="../images/avatar.png" alt="User_image" />
                         </asp:Panel>
                     </li>
                 </ul>
 
             </div>
+
+            <asp:Panel ID="panelUserDetails" runat="server" CssClass="menu-disable">
+                <!-- User detatails toggle -->
+                <div class="user-details" id="userDetails" runat="server">
+                    <div class="user-section">
+                        <asp:Image ID="userImage2" runat="server" ImageUrl="../images/avatar.png" AlternateText="UserImage" />
+                        <br />
+                        <asp:Label ID="lblUserName" runat="server" Text="User name"></asp:Label>
+                    </div>
+
+                    <div class="btn-section">
+                        <asp:Button ID="btnProfile" runat="server" Text="Profile" CssClass="profile" />
+                        <asp:Button ID="btnLogout" runat="server" Text="Logout" CssClass="logout" />
+                    </div>
+                </div>
+            </asp:Panel>
+
         </div>
 
-        <div class="courses-menu">
-            <div class="container">
-                <ul>
-                    <li><a href="../SyllabusUI/HTMLCourse.aspx"><i class="fab fa-html5"></i>&nbsp;HTML</a></li>
+        <asp:Panel ID="pnlCourseMenu" runat="server">
+            <div class="courses-menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="../SyllabusUI/HTMLCourse.aspx"><i class="fab fa-html5"></i>&nbsp;HTML</a></li>
 
-                    <li class="dropdown-li">
-                        <a href="#"><i class="fab fa-css3-alt"></i>&nbsp;CSS&nbsp;<span class="caret"></span></a>
+                        <li class="dropdown-li">
+                            <a href="#"><i class="fab fa-css3-alt"></i>&nbsp;CSS&nbsp;<span class="caret"></span></a>
 
-                        <div class="dropdown-css">
-                            <a href="../SyllabusUI/CSSCourse.aspx">Basic CSS</a>
-                            <a href="#">Animate.CSS</a>
-                            <a href="#">Responsive Layout</a>
-                        </div>
-                    </li>
+                            <div class="dropdown-css">
+                                <a href="../SyllabusUI/CSSCourse.aspx">Basic CSS</a>
+                                <a href="../SyllabusUI/AnimateCSS.aspx">Animate.CSS</a>
+                                <a href="#">Responsive Layout</a>
+                            </div>
+                        </li>
 
-                    <li><a href="#"><i class="fab fa-slack-hash"></i>&nbsp;Bootstrap</a></li>
-                    <li><a href="../SyllabusUI/JavaScriptCourse.aspx"><i class="fab fa-js-square"></i>&nbsp;JavaScript</a></li>
-                </ul>
+                        <li><a href="../SyllabusUI/BoostrapCourse.aspx"><i class="fab fa-slack-hash"></i>&nbsp;Bootstrap</a></li>
+                        <li><a href="../SyllabusUI/JavaScriptCourse.aspx"><i class="fab fa-js-square"></i>&nbsp;JavaScript</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </asp:Panel>
 
         <div class="m-body">
             <asp:ContentPlaceHolder ID="body" runat="server">
@@ -103,7 +127,7 @@
         </div>
     </form>
 
-    <script>
+        <script type="text/javascript">
         var acc = document.getElementsByClassName("accor");
         var i;
 
@@ -120,10 +144,16 @@
         }
     </script>
 
+<%--    <script type="text/javascript">
+        $("#imgUser").on("click", function () {
+            $("#panelUserDetails").css("display", "block !important");
+        });
+    </script>--%>
 
-    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--%>
+    <%--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
+    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>--%>
 </body>
 </html>

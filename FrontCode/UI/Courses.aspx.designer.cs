@@ -13,6 +13,15 @@ namespace FrontCode.UI {
     public partial class HomePage {
         
         /// <summary>
+        /// hf1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hf1;
+        
+        /// <summary>
         /// isEnroll control.
         /// </summary>
         /// <remarks>
@@ -20,6 +29,24 @@ namespace FrontCode.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label isEnroll;
+        
+        /// <summary>
+        /// hf2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hf2;
+        
+        /// <summary>
+        /// hf3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hf3;
         
         /// <summary>
         /// Label1 control.
@@ -31,6 +58,15 @@ namespace FrontCode.UI {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
+        /// hf4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hf4;
+        
+        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -40,6 +76,15 @@ namespace FrontCode.UI {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
+        /// hf5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hf5;
+        
+        /// <summary>
         /// Label3 control.
         /// </summary>
         /// <remarks>
@@ -47,6 +92,15 @@ namespace FrontCode.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
+        /// hf6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hf6;
         
         /// <summary>
         /// Label4 control.

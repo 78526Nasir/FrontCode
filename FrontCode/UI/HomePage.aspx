@@ -90,7 +90,7 @@
                 A lightweight <i class="fab fa-react" style="color:#6fffff"></i> High-level <i class="fab fa-vuejs" style="color:#52c7a2"></i>
                 <span>Interpreted programming language <i class="fab fa-node" style="color:#7f7"></i></span>
             </div>
-            <asp:Button Text="Learn JavaScript" ID="btnLearnJavaScript" runat="server" CssClass="btn-learn-js" />
+            <asp:Button Text="Learn JavaScript" ID="btnLearnJavaScript" runat="server" CssClass="btn-learn-js" OnClick="btnLearnJavaScript_Click" />
         </div>
     </div>
 

@@ -9,10 +9,10 @@
                 <div class="course">
                     <div class="img-container">
                         <img src="../images/html5.png" alt="Learn HTML" />
-
+                        <asp:HiddenField ID="hf1" runat="server" Value="06E8CD73-E9AB-4C81-B566-E11E86A09F8D"/>
                         <div class="overlay">
                         </div>
-                        <a href="#" class="reference" target="_blank">View Course</a>
+                        <a href="../SyllabusUI/HTMLCourse.aspx" class="reference" target="_blank">View Course</a>
                     </div>
 
                     <div class="details">
@@ -22,7 +22,7 @@
 
                     <div class="process">
                         <a href="../SyllabusUI/HTMLCourse.aspx" class="buttons">COURSE SYLLABUS</a>
-                        <a href="../CourseMaterial/HTML.aspx" class="buttons">ENROLL</a>
+                        <a href="../CourseMaterial/CourseHTML.aspx" class="buttons">ENROLL</a>
                     </div>
 
                     <div class="is-enroll">
@@ -35,10 +35,10 @@
                 <div class="course">
                     <div class="img-container">
                         <img src="../images/css3.png" alt="Learn CSS" />
-
+                        <asp:HiddenField ID="hf2" runat="server" Value="7241A64F-8992-4BCB-B666-4C2E7F4B4A3D" />
                         <div class="overlay">
                         </div>
-                        <a href="#" class="reference" target="_blank">View Course</a>
+                        <a href="../SyllabusUI/CSSCourse.aspx" class="reference" target="_blank">View Course</a>
                     </div>
 
                     <div class="details">
@@ -47,10 +47,10 @@
                     </div>
 
                     <div class="process">
-                        <a href="#" class="buttons">COURSE SYLLABUS</a>
-                        <a href="#" class="buttons">ENROLL</a>
+                        <a href="../SyllabusUI/CSSCourse.aspx" class="buttons">COURSE SYLLABUS</a>
+                        <a href="../CourseMaterial/CourseCSS.aspx" class="buttons">ENROLL</a>
                     </div>
-
+                    <asp:HiddenField ID="hf3" runat="server" Value="901CA3BB-F90E-48C6-AAEB-A0478C7156F9" />
                     <div class="is-enroll">
                         <asp:Label ID="Label1" runat="server"></asp:Label>
                     </div>
@@ -61,10 +61,10 @@
                 <div class="course">
                     <div class="img-container">
                         <img src="../images/javascript1.jpg" alt="Introduction To JavaScript" />
-
+                        <asp:HiddenField  ID="hf4" runat="server" Value="AC74A841-C8B6-4D23-AA6F-7443981A6FF5"/>
                         <div class="overlay">
                         </div>
-                        <a href="#" class="reference" target="_blank">View Course</a>
+                        <a href="../SyllabusUI/JavaScriptCourse.aspx" class="reference" target="_blank">View Course</a>
                     </div>
 
                     <div class="details">
@@ -73,8 +73,8 @@
                     </div>
 
                     <div class="process">
-                        <a href="#" class="buttons">COURSE SYLLABUS</a>
-                        <a href="#" class="buttons">ENROLL</a>
+                        <a href="../SyllabusUI/JavaScriptCourse.aspx" class="buttons">COURSE SYLLABUS</a>
+                        <a href="../CourseMaterial/CourseJavaScript.aspx" class="buttons">ENROLL</a>
                     </div>
 
                     <div class="is-enroll">
@@ -87,10 +87,10 @@
                 <div class="course">
                     <div class="img-container">
                         <img src="../images/bootstrap.png" alt="Learn Bootstrap" />
-
+                        <asp:HiddenField ID="hf5" runat="server" Value="477CD7AA-BB4D-4127-8A7D-AD84340809EC" />
                         <div class="overlay">
                         </div>
-                        <a href="#" class="reference" target="_blank">View Course</a>
+                        <a href="../SyllabusUI/BoostrapCourse.aspx" class="reference" target="_blank">View Course</a>
                     </div>
 
                     <div class="details">
@@ -99,8 +99,8 @@
                     </div>
 
                     <div class="process">
-                        <a href="#" class="buttons">COURSE SYLLABUS</a>
-                        <a href="#" class="buttons">ENROLL</a>
+                        <a href="../SyllabusUI/BoostrapCourse.aspx" class="buttons">COURSE SYLLABUS</a>
+                        <a href="../CourseMaterial/CourseBootstrap.aspx" class="buttons">ENROLL</a>
                     </div>
 
                     <div class="is-enroll">
@@ -114,10 +114,10 @@
 
                     <div class="img-container">
                         <img src="../images/animation.png" alt="Learn CSS Animation" />
-
+                        <asp:HiddenField ID="hf6" runat="server" Value="00234E1B-15A2-4964-9E4B-FEC312396EEE" />
                         <div class="overlay">
                         </div>
-                        <a href="#" class="reference" target="_blank">View Course</a>
+                        <a href="../SyllabusUI/CourseAnimateCSS.aspx" class="reference" target="_blank">View Course</a>
                     </div>
 
                     <div class="details">
@@ -126,8 +126,8 @@
                     </div>
 
                     <div class="process">
-                        <a href="#" class="buttons">COURSE SYLLABUS</a>
-                        <a href="#" class="buttons">ENROLL</a>
+                        <a href="../SyllabusUI/AnimateCSS.aspx" class="buttons">COURSE SYLLABUS</a>
+                        <a href="../CourseMaterial/CourseAnimateCSS.aspx" class="buttons">ENROLL</a>
                     </div>
 
                     <div class="is-enroll">
