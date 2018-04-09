@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/UI/Index.Master" AutoEventWireup="true" CodeBehind="JavaScriptCourse.aspx.cs" Inherits="FrontCode.SyllabusUI.JavaScriptCourse" %>
+﻿<%@ Page Title="JavaScript Course Syllabus" Language="C#" MasterPageFile="~/UI/Index.Master" AutoEventWireup="true" CodeBehind="JavaScriptCourse.aspx.cs" Inherits="FrontCode.SyllabusUI.JavaScriptCourse" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="body" runat="server">
     <div class="main-content">
@@ -144,7 +144,7 @@
 
                 <div class="col-md-5" style="text-align: center; margin-top: 30px;">
                     <img class="img-responsive" src="../images/javascript_circle.png" alt="javascript" />
-                    <asp:Button Text="Enroll" ID="btnEnrollHTML" runat="server" CssClass="btn-enroll-js" />
+                    <asp:Button Text="Enroll" ID="btnEnrollJavaScript" runat="server" CssClass="btn-enroll-js" OnClick="btnEnrollJavaScript_Click" />
                 </div>
             </div>
         </div>
