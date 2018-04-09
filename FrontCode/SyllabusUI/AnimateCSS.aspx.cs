@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessAccessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,11 @@ namespace FrontCode.SyllabusUI
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnEnrollAnimateCSS_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/CourseMaterial/CourseAnimateDotCSS.aspx?CID=00234E1B-15A2-4964-9E4B-FEC312396EEE");
         }
     }
 }
