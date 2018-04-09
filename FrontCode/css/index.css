@@ -30,7 +30,7 @@ a{
 }
 
 a:hover, a:focus, a:visited{
-    color:black;
+    color: #dedede;
 }
 
 .m-header{
@@ -122,4 +122,56 @@ after-login{
         top:0;
         right:0;
     }
+}
+
+.user-details{
+    position:absolute;
+    height:200px;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.70);
+    right: 100px;
+    text-align: center;
+    padding: 20px 10px 5px 10px;
+    box-sizing:  border-box;
+    z-index: 10;
+    top: 64px;
+}
+
+#lblUserName{
+    margin-top: 15px;
+    font-size: 14px;
+    display:  block;
+    color: #ddd;
+}
+
+.user-section{
+    height: 115px;
+}
+
+.user-details img{
+    width: 35%;
+}
+
+.btn-section{
+    margin-top: 10px;
+}
+
+.profile, .logout{
+    height:30px;
+    width:100px;
+    margin:5px;
+    border:1px solid #ddd;
+    background:transparent;
+    color:#ddd;
+    border-radius:2px;
+    outline:none;
+    transition:all 0.33s ease-in-out;
+}
+
+.profile:hover, .logout:hover{
+    background:rgba(255,255,255,0.25);
+}
+
+.code-r{
+    color:#262c3a !important;
 }

@@ -1,0 +1,42 @@
+﻿@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background:#f1f1f1;
+}
+
+#container{
+    width: 99.5%;
+    height: 570px;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 3px solid #228866;
+}
+
+#editor{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+}
+
+#iframe{
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    background: #fffef6;
+}
+
+h1{
+    text-align:center;
+    font-family:OpenSans-Light, Calibri;
+    color:#226688;
+    font-weight:normal;
+}
+

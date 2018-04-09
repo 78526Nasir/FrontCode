@@ -1,0 +1,34 @@
+﻿.d-head{
+    min-height:600px;
+    background:#222;
+    width:100%;
+    margin-top:-45px;
+    padding-top:30px;
+}
+
+.en-h1{
+    color:#777;
+}
+
+.hr{
+    border:1px solid #777 !important;
+    margin-bottom:40px;
+}
+
+.btn-continue{
+    height:40px;
+    width:100%;
+    border:1px solid #333;
+    border-bottom:3px solid #555;
+    background:#777;
+    color:#eee;
+    text-transform:uppercase;
+    font-size:12px;
+    font-family:'OpenSans-Regular';
+    outline:none;
+    transition:all 0.33s ease-in-out;
+}
+
+.btn-continue:hover{
+    background:#666;
+}
