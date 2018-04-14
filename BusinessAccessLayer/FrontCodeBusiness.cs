@@ -183,5 +183,40 @@ namespace BusinessAccessLayer
         {
             return DataAccess.ExecuteDTByProcedure("SELECT_ENROLL_COURSES", null);
         }
+
+        public DataTable SelectQuestions()
+        {
+            return DataAccess.ExecuteDTByProcedure("SELECT_ALL_QUESTION", null);
+        }
+
+        public DataTable SelectOptionsByQuestion(int questionID)
+        {
+            SqlParameter[] parameters = new SqlParameter[1];
+            parameters[0] = DataAccess.AddParameter("@questionID", questionID);
+
+            return DataAccess.ExecuteDTByProcedure("SELECT_ALL_OPTIONS_BY_QUESTION", parameters);
+        }
+
+        public void AddNewQuestions(string questionDesc)
+        {
+            SqlParameter[] parameters = new SqlParameter[1];
+
+            parameters[0] = DataAccess.AddParameter("@questionDesc", questionDesc);
+            DataAccess.ExecuteDTByProcedure("ADD_NEW_QUESTION", parameters);
+        }
+
+        public DataTable FindQuestionID()
+        {
+            return DataAccess.ExecuteDTByProcedure("SELECT_LAST_QUESTION_ID", null);
+        }
+        public void AddOptionsToQuestion(int questionID, string optionDesc)
+        {
+            SqlParameter[] parameters = new SqlParameter[2];
+
+            parameters[0] = DataAccess.AddParameter("@questionID", questionID);
+            parameters[1] = DataAccess.AddParameter("@optionDescription", optionDesc);
+
+            DataAccess.ExecuteDTByProcedure("ADD_OPTIONS_TO_QUESTION", parameters);
+        }
     }
 }
