@@ -12,19 +12,19 @@ namespace FrontCode.CourseMaterial
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                if (Session["UserWholeRecord"] != null)
-                {
-                    string guid = Request.QueryString["CID"].ToString();
-                    FrontCodeBusiness fcb = new FrontCodeBusiness();
-                    fcb.AddNewEnrolledCourse(guid);
-                }
-                else
-                {
-                    Response.Redirect("~/UI/UserLogin.aspx");
-                }
-            }
+            //if (!IsPostBack)
+            //{
+            //    if (Session["UserWholeRecord"] != null)
+            //    {
+            //        string guid = Request.QueryString["CID"].ToString();
+            //        FrontCodeBusiness fcb = new FrontCodeBusiness();
+            //        fcb.AddNewEnrolledCourse(guid);
+            //    }
+            //    else
+            //    {
+            //        Response.Redirect("~/UI/UserLogin.aspx");
+            //    }
+            //}
         }
     }
 }
