@@ -127,13 +127,13 @@ p{
 
 .q-container{
     margin: 20px;
-    padding: 44px 0px;
+    padding: 44px 0px 24px 0px;
     box-sizing: border-box;
-    background: #434343;
+    background: #f9f9f9;
     border-radius: 3px;
     text-align: center;
     font-family:Ubuntu-Medium;
-    color:#eee;
+    color: #228866;
 }
 
 .radio-button{
@@ -142,6 +142,53 @@ p{
 
 .radio-button label{
     font-weight:normal;
+}
+
+.btn-p-n{
+    height:35px;
+    width:120px;
+    border:1px solid #007959;
+    border-radius:2px;
+    background:white;
+    margin:5px;
+    color:#007959;
+    outline:none;
+    transition:all 0.33s ease-in-out;
+}
+
+.btn-p-n:hover:not(:disabled){
+    background:#007959;
+    color:white;
+}
+
+.controls{
+    height:50px;
+    padding:0px 40px;
+    margin-top:40px;
+}
+
+.f-l{
+    float:left;
+}
+
+.f-r{
+    float:right;
+}
+
+.score-details{
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:30px;
+    width:60%;
+    text-align:left;
+}
+
+.score-details p {
+    font-family:Ubuntu-Medium, Calibri;
+}
+
+.m-a{
+    margin:auto;
 }
 
 .red{

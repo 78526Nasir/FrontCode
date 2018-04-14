@@ -1,0 +1,84 @@
+﻿body{
+    background:#050505;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url('../fonts/Ubuntu-Light.ttf') format('truetype');
+}
+
+.q-content{
+    padding-top:80px;
+    min-height:450px;
+}
+
+.quiz-contain{
+    margin-top:50px;
+    width:60%;
+    min-height:300px;
+    background:#212121;
+    border-radius:3px;
+    margin:auto;
+    margin-bottom:50px;
+    color:#898989;
+    padding:40px 50px;
+}
+
+.quiz-contain h3{
+    font-family:Ubuntu-Medium, Calibri;
+}
+
+.options{
+    margin:auto;
+    margin-top:20px;
+    width:80%;
+}
+
+.quiz-contain label{
+    font-size:16px;
+    font-family:Ubuntu-Light, Calibri;
+    padding-left:10px;
+    font-weight:normal;
+}
+
+.quiz-contain .controls{
+    margin-top:40px;
+    height:50px;
+    display:block;
+    padding:0;
+}
+
+.btn-prev, .btn-next, .btn-fin{
+    height:40px;
+    width:120px;
+    background:#666;
+    border:none;
+    border-radius:1px;
+    color:#111;
+    outline:none;
+    font-family:Ubuntu-Medium, Calibri;
+    font-size:16px;
+    border-bottom:4px solid #888;
+    transition:all 0.33s ease-in-out;
+}
+
+.btn-next:hover:not(:disabled), .btn-prev:hover:not(:disabled), .btn-fin:hover:not(:disabled){
+    background:#444;
+    border-bottom:4px solid #777;
+}
+
+.btn-next{
+    float:right;
+}
+.btn-prev{
+    float:left;
+}
+
+.finish{
+    display:none;
+}

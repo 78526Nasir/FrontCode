@@ -1,0 +1,82 @@
+﻿@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+.a-q-container{
+    min-height:500px;
+    width: 44%;
+    background:#555;
+    margin:auto;
+    margin-top:50px;
+    text-align:center;
+    padding:40px;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.5);
+    color:#ccc;
+    font-family:OpenSans-Regular, Calibri;
+}
+
+.label{
+    font-size: 16px;
+    font-weight:  normal;
+    padding-right:60px;
+}
+
+.q-table{
+    text-align:left;
+    margin-top:20px;
+}
+
+.textbox{
+    height:40px;
+    width:250px;
+    border:1px solid #222;;
+    border-radius:3px;
+    outline:none;
+    padding-left:15px;
+    background:#222;
+    color:white;
+    transition:all 0.33s ease-in-out;
+}
+
+.textbox:focus{
+    border:1px solid #111;
+    box-shadow:0 0 0 4px rgba(255, 255, 255, 0.4);
+}
+hr{
+    width: 40%;
+    border-color: #8a8a8a;
+}
+
+.l-table{
+    margin-top:30px;
+}
+
+.l-table .label{
+    padding-right:160px;
+}
+
+.l-table .textbox{
+    margin-bottom:20px;
+}
+
+.btn-add{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #888;
+    background: #444;
+    border-radius: 3px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font:bold 15px calibri;
+    outline:none;
+    transition:all 0.33s ease-in-out;
+}
+
+.btn-add:hover{
+    background:#222;
+}
+
+.btn-add:focus{
+    box-shadow:0 0 0 3px rgba(255,255,255,0.5);
+}
