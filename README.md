@@ -29,7 +29,7 @@ whose are not well in English.
 
 #### Other Functionalities
 * Password recovery using gmail **SMTP** server
-* Using **Windows Event Viwer** to log the **Exceptions** when the Database **Failed**
+* Using **Windows Event Viewer** to log the **Exceptions** when the Database **Failed**
 
 # UI's
 ### Home Page UI
