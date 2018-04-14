@@ -5,10 +5,9 @@ A place to learn FrontEnd Technologies. :octocat:
 ```
 “FrontCode” is an online web platform, where user can learn Front-End Technologies like HTML, CSS, 
 and JavaScript etc. The vision of this project is to provide full flexibility and resources to learn 
-Front-End technologies. In this website user will access all the course without any cost. The main purpose
-or motive of this project is that “Knowledge is open and free”. Here all the lessons and 
-theoretical part will be discussed and covered in Bangla. It will gives a huge benefit to the users
-whose are not well in English. 
+Front-End technologies. In this website user will access all the courses without any cost. All the lessons and 
+theoretical part will be discussed and covered in Bangla. This will gives a huge benefit to the users
+whom are not well in English. 
 ```
 
 ## Main Functionalities
