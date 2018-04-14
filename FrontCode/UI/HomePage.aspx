@@ -21,31 +21,31 @@
                 <div class="code">
                     &lt;!DOCTYPE html&gt;
                     <br />
-                    &lt;<span class="blue">html</span> <span class="cyan">lang</span>=<span class="brown">"en"</span>&gt;
+                    &lt;<span class="blue1">html</span> <span class="cyan1">lang</span>=<span class="brown1">"en"</span>&gt;
                     <br />
-                    &lt;<span class="blue">head&gt;</span>
+                    &lt;<span class="blue1">head&gt;</span>
                     <br />
-                    &lt;<span class="blue">title</span>&gt;Login&lt;/<span class="blue">title</span>&gt;
+                    &lt;<span class="blue1">title</span>&gt;Login&lt;/<span class="blue1">title</span>&gt;
                     <br />
-                    &lt;<span class="blue">meta</span> <span class="cyan">name</span>=<span class="brown">"author"</span> <span class="cyan">content</span>=<span class="brown">"Nasir Islam Sujan"</span>&gt;
+                    &lt;<span class="blue1">meta</span> <span class="cyan1">name</span>=<span class="brown1">"author"</span> <span class="cyan1">content</span>=<span class="brown1">"Nasir Islam Sujan"</span>&gt;
                     <br />
-                    &lt;<span class="blue">meta</span> <span class="cyan">charset</span>=<span class="brwon">"UTF-8"</span>&gt;
+                    &lt;<span class="blue1">meta</span> <span class="cyan1">charset</span>=<span class="brwon1">"UTF-8"</span>&gt;
                     <br />
-                    &lt;<span class="blue">meta</span> <span class="cyan">name</span>=<span class="brown">"viewport"</span> <span class="blue">content</span>=<span class="brown">"width=device-width, initial-scale=1.0"</span>&gt;
+                    &lt;<span class="blue1">meta</span> <span class="cyan1">name</span>=<span class="brown1">"viewport"</span> <span class="blue1">content</span>=<span class="brown1">"width=device-width, initial-scale=1.0"</span>&gt;
                     <br />
-                    &lt;/<span class="blue">head</span>&gt;
+                    &lt;/<span class="blue1">head</span>&gt;
                     <br />
-                    &lt;<span class="blue">body</span>&gt;
+                    &lt;<span class="blue1">body</span>&gt;
                     <br />
-                    &emsp;&emsp;&lt;<span class="blue">div</span>&gt;
+                    &emsp;&emsp;&lt;<span class="blue1">div</span>&gt;
                             <br />
-                    &emsp;&emsp;&emsp;&emsp;&lt;<span class="blue">h1</span>&gt;Hello World!&lt;<span class="blue">/h1</span>&gt;
+                    &emsp;&emsp;&emsp;&emsp;&lt;<span class="blue1">h1</span>&gt;Hello World!&lt;<span class="blue1">/h1</span>&gt;
                         <br />
-                    &emsp;&emsp;&lt;<span class="blue">/div</span>&gt;
+                    &emsp;&emsp;&lt;<span class="blue1">/div</span>&gt;
                     <br />
-                    &lt;<span class="blue">/body</span>&gt;
+                    &lt;<span class="blue1">/body</span>&gt;
                     <br />
-                    &lt;<span class="blue">/head&gt;</span>
+                    &lt;<span class="blue1">/head&gt;</span>
                 </div>
             </div>
 
@@ -60,13 +60,13 @@
         <img src="../images/css3_course_r.jpg" alt="Alternate Text" />
         <div class="css-code">
             <div class="code-snip">
-                <span class="brown">h1</span>{
+                <span class="brown1">h1</span>{
                 <br />
-                &emsp;&emsp;<span class="red">font-family</span>: <span class="blue">Garamond</span>, <span class="blue">Calibri</span>;
+                &emsp;&emsp;<span class="red1">font-family</span>: <span class="blue1">Garamond</span>, <span class="blue1">Calibri</span>;
                 <br />
-                &emsp;&emsp;<span class="red">color</span>:<span class="blue">white</span>;
+                &emsp;&emsp;<span class="red1">color</span>:<span class="blue1">white</span>;
                 <br />
-                &emsp;&emsp;<span class="red">line-height</span>:<span class="blue">70px</span>;
+                &emsp;&emsp;<span class="red1">line-height</span>:<span class="blue1">70px</span>;
                 <br />
                 }
             </div>

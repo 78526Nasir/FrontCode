@@ -44,7 +44,8 @@ namespace FrontCode.UI
                      Request.Url.AbsolutePath.Contains("CourseH")||
                      Request.Url.AbsolutePath.Contains("CourseJ")||
                      Request.Url.AbsolutePath.Contains("DashBoard")||
-                     Request.Url.AbsolutePath.Contains("HTMLLesson")
+                     Request.Url.AbsolutePath.Contains("HTMLLesson")||
+                     Request.Url.AbsolutePath.Contains("CSSLesson")
                      )
             {
                 pnlCourseMenu.Style.Add("display", "none");

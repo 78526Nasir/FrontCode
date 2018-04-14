@@ -11,6 +11,8 @@
     <link href="../Untracked/bootstrap.min.css" rel="stylesheet" />
     <link href="../Untracked/fontawesome-all.min.css" rel="stylesheet" />
     <link href="../Untracked/github.css" rel="stylesheet" />
+    
+    <link href="https://fonts.maateen.me/mukti/font.css" rel="stylesheet">
 
     <!-- Desktop JS CDN -->
     <script src="../Untracked/fontawesome-all.min.js"></script>
@@ -27,7 +29,8 @@
     <link href="../css/about.css" rel="stylesheet" />
     <link href="../css/dashboard.css" rel="stylesheet" />
     <link href="../css/courseHtml.css" rel="stylesheet" />
-    
+    <link href="../css/quiz.css" rel="stylesheet" />
+    <link href="../css/addquestion.css" rel="stylesheet" />
 
 </head>
 <body>
